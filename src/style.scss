@@ -1,0 +1,19 @@
+$sheenTeal: #9BD4CB;
+$offWhite: #EFF6EE;
+
+
+body {
+  background-color: $sheenTeal;
+}
+
+textarea {
+  height: 30vh;
+  width: 70vw;
+  padding: 1vh;
+}
+
+
+.input-text {
+  object-fit: fill;
+}
+
