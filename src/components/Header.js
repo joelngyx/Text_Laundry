@@ -1,9 +1,13 @@
 import React from "react";
+import '../style.scss';
 
 
 const Header = () => {
   return(
-    <h1>Text Laundry</h1>
+    <div class='header'>
+      <h1>Text Laundry</h1>
+      <p>this web app cleans your text</p>
+    </div>
   )
 }
 

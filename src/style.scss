@@ -1,19 +1,82 @@
 $sheenTeal: #9BD4CB;
-$offWhite: #EFF6EE;
+$offWhite: #F9FAF0;
+$darkGrey: #5D5F71;
+$vermillion: #C82D38;
+$turqoise: #B0D4B3;
+$earthOrange: #68A4B6;
 
 
 body {
   background-color: $sheenTeal;
+  overflow-x: hidden;
+}
+
+button {
+  background-color: $darkGrey;
+  color: $sheenTeal;
+  border-radius: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 1vw;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  outline: $darkGrey;
+  &:hover {
+    background-color: $earthOrange;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
+}
+
+p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: medium;
 }
 
 textarea {
+  font-family: 'Courier New', Courier, monospace;
   height: 30vh;
   width: 70vw;
   padding: 1vh;
+  border-radius: 5px;
+  &:focus {
+    outline: none;
+  }
 }
 
+form {
+  font-family: 'Courier New', Courier, monospace;
+  input {
+    &:focus {
+      outline: none;
+    }
+  }
+}
 
-.input-text {
+.header {
+  width: 55vw;
+  background-color: $darkGrey;
+  color: $sheenTeal;
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 5px;
+
+  p {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+  }
+}
+
+.text-area {
   object-fit: fill;
 }
 
+.custom-p-text {
+  padding-top: 15px;
+}

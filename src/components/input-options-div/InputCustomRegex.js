@@ -1,9 +1,13 @@
-import React, { useState } from "react";
-import '../style.scss';
+import React from "react";
+import '../../style.scss';
 
 const InputCustomRegex = (props) => {
   const updateInputText = (e) => {
-    props.setRegField(e.target.value);
+    try {
+      props.setRegField(e.target.value);
+    } catch (e) {
+      console.log(e);
+    }
   }
 
   return(
