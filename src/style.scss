@@ -6,9 +6,13 @@ $turqoise: #B0D4B3;
 $earthOrange: #68A4B6;
 
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   background-color: $sheenTeal;
-  overflow-x: hidden;
+  position: relative;
 }
 
 button {
@@ -16,7 +20,7 @@ button {
   color: $sheenTeal;
   border-radius: 10px;
   font-family: 'Courier New', Courier, monospace;
-  margin-left: 1vw;
+  margin: 2vh;
   padding-left: 10px;
   padding-right: 10px;
   border: none;
@@ -41,7 +45,7 @@ p {
 
 textarea {
   font-family: 'Courier New', Courier, monospace;
-  height: 30vh;
+  height: 25vh;
   width: 70vw;
   padding: 1vh;
   border-radius: 5px;
@@ -53,6 +57,7 @@ textarea {
 form {
   font-family: 'Courier New', Courier, monospace;
   input {
+    width: 7vw;
     &:focus {
       outline: none;
     }
